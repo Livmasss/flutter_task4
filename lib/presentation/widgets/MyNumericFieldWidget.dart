@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyTextFieldWidget extends StatefulWidget {
-  const MyTextFieldWidget({
+class MyNumericFieldWidget extends StatefulWidget {
+  const MyNumericFieldWidget({
     super.key,
     required this.onChanged,
     required this.hintText
@@ -11,17 +11,17 @@ class MyTextFieldWidget extends StatefulWidget {
   final String hintText;
 
   @override
-  State<MyTextFieldWidget> createState() => _MyTextFieldWidgetState(
-    onChanged: onChanged,
-    hintText: hintText
+  State<MyNumericFieldWidget> createState() => _MyNumericFieldWidgetState(
+      onChanged: onChanged,
+      hintText: hintText
   );
 }
 
-class _MyTextFieldWidgetState extends State<MyTextFieldWidget> {
+class _MyNumericFieldWidgetState extends State<MyNumericFieldWidget> {
   final ValueChanged<String>? onChanged;
   final String hintText;
 
-  _MyTextFieldWidgetState({
+  _MyNumericFieldWidgetState({
     required this.onChanged,
     required this.hintText
   });
@@ -30,6 +30,7 @@ class _MyTextFieldWidgetState extends State<MyTextFieldWidget> {
   Widget build(BuildContext context) {
     return
       TextField(
+        keyboardType: TextInputType.number,
         onChanged: onChanged,
         decoration: InputDecoration(
             hintText: hintText
