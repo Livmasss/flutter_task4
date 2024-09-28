@@ -8,4 +8,4 @@
 ![изображение](https://github.com/user-attachments/assets/5f21220c-09d9-41b4-97c1-bd0119f002c7)
 
 Результат работы, товар добавился
-![изображение](https://github.com/user-attachments/assets/34fe92f2-5fd1-4909-905c-093f67166706)
+![изображение](https://github.com/user-attachments/assets/95eb4fd0-bd10-42de-a142-1c31f99ed348)
